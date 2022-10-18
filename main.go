@@ -1,11 +1,13 @@
 package main
 
 import (
+	authcontroller "github.com/arafifh/golang-login-register-api/controllers"
 	"net/http"
-	"github.com/gin-gonic/gin"
+	//"database/sql"
+	//"github.com/gin-gonic/gin"
 	//"errors"
 )
 
 func main() {
-	r := gin.Default()
+	http.HandleFunc("/", authcontroller.Index)
 }
